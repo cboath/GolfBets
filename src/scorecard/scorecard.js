@@ -122,7 +122,9 @@ const playerRow = (players) => {
     console.log('Players ', players[j].holeScores)
     evening.push(
       <div className='rowC'>
-        <div className='HoleName'>{players[j].name}</div>
+        <div className='HoleName'>
+          {players[j].name}
+        </div> 
         {score(players[j].holeScores, 'front')}
         {sideTotal(players[j].holeScores, 'front')}
         {score(players[j].holeScores, '')}
