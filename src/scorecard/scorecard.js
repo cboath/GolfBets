@@ -1,44 +1,10 @@
 import React from 'react'
 import './scorecard.css'
 
-<<<<<<< HEAD
-//   This is a StackOverflow solution that uses .bind and setState. -MJB
-//   class Example extends React.Component {
-//   
-//   constructor() {
-//     super();
-//     this.state = { gender: "male" };
-//     this.handleChange = this.handleChange.bind(this);
-//   }
-//
-//   handleChange(e) {
-//     this.setState({ gender: e.target.value });
-//   }
-//
-//   render() {
-//     return (
-//       <select value={this.state.gender} onChange={this.handleChange}>
-//         <option name="male"> Male</option>
-//         <option name="female">Female</option>
-//       </select>
-//     );
-//   }
-// }
-//
-// ReactDOM.render(<Example />, document.getElementById("root"));
-
-var handleChange = (event) => {
-  // Trying to find where handleChange manifests
-  // console.log(event.current.value)
-  this.setState({ score: event.current.value })
-  // handleChange = handleChange.bind(this)
-  console.log("Aren't we supposed to see this?")
-=======
 const handleChange = (event) => {
   let keyStroke = parseInt(event.key)
   // Trying to find where handleChange manifests
   // console.log("Aren't we supposed to see this?")
->>>>>>> 6cc708ad448035eb87651eb155cb4c2dbdf49853
   // console.log('Status: ', this.props)
   console.log(event.key)
   if (event.key >= '0' && event.key <= '9') {
@@ -86,9 +52,6 @@ const score = (inScore, side) => {
             style="resize: none; width: 100%;">
             </textarea>
           </td> */}
-<<<<<<< HEAD
-          <input className='inputCell' type='input' value={score[f].score} onChange={handleChange()} />
-=======
           <input className='inputCell' type='input' 
             defaultValue={inScore[f].score} onKeyUp={handleChange
             /*console.log('OnKeyUp ', onKeyUp)
@@ -97,7 +60,6 @@ const score = (inScore, side) => {
             console.log('OnKeyUp ', onKeyUp);
              inScore[f].score.bind(onKeyUp);
           </script>  */}
->>>>>>> 6cc708ad448035eb87651eb155cb4c2dbdf49853
         </form>
       </div>
     )
