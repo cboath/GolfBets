@@ -3,6 +3,8 @@ import Scorecard from './scorecard/scorecard'
 import './GolfScore.css'
 import './bootstrap.min.css'
 
+// Move the data to the DB
+
 class GolfScore extends Component {
   state = [
     {
